@@ -1,0 +1,600 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    overflow-x: hidden;
+    color: #050504;
+}
+
+h1, h2 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.logo a {
+    color: #050504;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p, ul li {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    word-spacing: 0.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}   
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 7%;
+}
+
+.col {
+    flex: 1;
+}
+
+/* Header */
+
+header {
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.scrolling-active {
+    background-color: #fff;
+    box-shadow: 0 6px 10px -2px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+}
+
+nav .bar-menu {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 70px;
+    z-index: 1;
+}
+
+nav ul li a {
+    padding: 0 3.8rem;
+    color: #050504;
+}
+
+nav ul li a:hover {
+    color: #df7f1f;
+}
+
+.btn-1 {
+    background-color: transparent;
+    color: #050504;
+    border: 2px solid #df7f1f;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 8px 20px;
+}
+
+.btn-1:hover {
+    background-color: #df7f1f;
+    color: #fff;
+}
+
+/* hero */
+#hero .container {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#hero h1 {
+    font-size: 5rem;
+}
+
+#hero p {
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.col.hero-img {
+    background-image: url(/assets/bg-1a.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.col.text {
+    padding-left: 7%;
+}
+
+.btn-2 {
+    background-color: #df7f1f;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.btn-2 a {
+    color: #fff;
+}
+
+.sosmed {
+    display: flex;
+}
+
+.sosmed ul {
+    display: flex;
+    margin-top: 5%;
+}
+
+.sosmed ul li {
+    padding-right: 20px;
+}
+
+.sosmed ul li a {
+    color: #050504;
+    font-size: 20px;
+}
+
+.sosmed ul li a:hover {
+    color: #df7f1f;
+}
+
+/* About */
+#about {
+    height: max-content;
+}
+.panel {
+    margin: 4% 0;
+}
+.col.service {
+    display: flex;
+    box-shadow: 0 6px 10px -2px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 2%;
+    border-radius: 10px;
+    justify-content: center;
+    width: 30%;
+}
+
+.col.service i {
+    font-size: 32px;
+    color: #df7f1f;
+    align-self: center;
+}
+
+.col.service .txt {
+    margin-left: 20px;
+}
+
+.container.about {
+    padding: 0;
+}
+
+.container.about .col img {
+    width: 80%;
+}
+
+.container.about .col.txt {
+    /* flex: 2; */
+    padding-right: 7%;
+}
+
+.col.txt h2 {
+    margin-bottom: 2%;
+}
+
+
+/* Menu */
+#menu {
+    height: max-content;
+}
+.wrapper {
+    text-align: center;
+    margin-top: 3%;
+}
+
+#menu .container {
+    width: 85%;
+    margin: 2% auto;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.section-name {
+    color: #df7f1f;
+}
+
+.card {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 6px 20px -2px rgba(0, 0, 0, 0.1);
+    margin: 2% 0;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.card:hover {
+    transform: translate(0px, -10px);
+    box-shadow: 0 6px 32px -2px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+}
+
+.card img {
+    width: 50%;
+}
+
+.card .txt {
+    flex: 1;
+    padding: 5%;
+}
+
+.card .txt p {
+    margin-top: 15%;
+}
+
+.price {
+    background-color: #df7f1f;
+    color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+    width: max-content;
+    position: relative;
+    bottom: -18%;
+    right: -70%;
+}
+
+/* Order */
+#order {
+    background-image: url(/assets/bg-3.png);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#order .container {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.call {
+    margin: 5% 0;
+    color: #df7f1f;
+    font-style: italic;
+    font-size: 3rem;
+}
+
+#order .sosmed ul {
+    margin-top: 0;
+}
+
+#order .sosmed {
+    justify-content: center;
+}
+
+#order .sosmed ul li {
+    padding: 0 10px;
+    
+}
+
+/* Footer */
+footer .container {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-top: 2px solid #050504;
+}
+
+.logo, .nav, aside {
+    margin: 0 2%;
+}
+
+.sosmed ul {
+    margin-top: 3%;
+}
+
+
+aside {
+    display: flex;
+    width: 50%;
+}
+
+.made {
+    flex: 2;
+}
+
+aside .col.profile img {
+    border-radius: 50%;
+    width: 50%;
+}
+
+.col.nav ul li a {
+    color: #050504;
+}
+
+.col.nav ul li a:hover {
+    color: #df7f1f;
+}
+
+.col.nav ul li {
+    line-height: 30px;
+}
+
+.copyright {
+    background-color: #050504;
+    color: #fff;
+    text-align: center;
+    padding: 1% 0;
+}
+
+/* Responsive */
+/* tablet */
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    /* header */
+    header {
+        height: 50vh ;
+    }
+
+    nav ul li a {
+        padding: 0;
+    }
+
+    .btn-1 a {
+        color: #df7f1f;
+    }
+    
+    #hero h1 {
+        font-size: 4rem;
+    }
+    .col.hero-img {
+        background-repeat: no-repeat;
+        height: 50vh;
+    }
+
+    /* about */
+    #about {
+        height: max-content;
+    }
+
+    .col.service {
+        box-shadow: none;
+    }
+
+    /* menu */
+    #menu {
+        margin-bottom: 5%;
+    }
+    
+    .card {
+        width: 45%;
+    }
+    
+    .price {
+        bottom: -10%;
+    }
+
+    /* order */
+    #order {
+        height: 25vh;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+    /* Header */
+
+    header {
+        height: 100vh;
+        background-image: url(/assets/bg-1a.jpg);
+        background-size: cover;;
+    }
+
+    nav {
+        padding: 3% 5%;
+    }
+
+    nav .bar-menu {
+        display: inline;
+        z-index: 1;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #fff;
+        text-align: center;
+        padding-top: 10%;
+        transition: 1s;
+    }
+
+    .btn-1 {
+        background-color: #df7f1f;
+        color: #fff;
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        padding: 10% 0;
+    }
+
+    nav ul li a {
+        font-size: 2rem;
+    }
+
+
+    nav .bar-menu button i {
+        font-size: 20px;
+        /* color: #050504; */
+        color: #df7f1f;
+    }
+
+    nav .bar-menu button {
+        background-color: transparent;
+        border: none;
+        z-index: 2;
+    }
+
+    /* Hero */
+
+    #hero .container {
+        padding-top: 20vh;
+    }
+
+    .col.hero-img {
+        display: none;
+    }
+
+    #hero h1 {
+        font-size: 4rem;
+        margin-bottom: 3vh;
+    }
+
+    .sosmed ul li a {
+        color: #050504;
+        font-size: 20px;
+    }
+
+    .sosmed {
+        margin-top: 2vh;
+    }
+
+    /* About */
+    .container.panel {
+        margin: 0 auto;
+        width: 75%;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-shadow: 0 6px 20px -2px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        background-color: #fff;
+        position: relative;
+        top: -5vh;
+    }
+
+    .col.service {
+        border: 2px solid #fff;
+        box-shadow: none;
+        justify-content: start;
+    }
+
+    .container.about {
+        margin: 5vh auto;
+        width: 80%;
+    }
+
+    .col.about-img {
+        display: none;
+    }
+
+    /* Menu */
+    #menu {
+        margin-bottom: 5%;
+    }
+    
+    #menu h2 {
+        margin-bottom: 8%;
+    }
+    
+    .card {
+        width: 100%;
+        margin: 3% 0;
+    }
+    
+    .price {
+        bottom: -10%;
+    }
+
+    /* Order */
+
+    #order {
+        height: 40vh;
+    }
+
+    .call {
+        margin: 15% 0;
+        font-size: 2rem;
+    }
+
+    /* Footer */
+    footer .container {
+        display: inline-block;
+
+    }
+
+    footer .col {
+        margin: 2% 0;
+    }
+
+    .col.created-by {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    aside {
+        display: flex;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    aside .col.profile img {
+        width: 100%;
+    }
+
+} 
